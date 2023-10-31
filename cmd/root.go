@@ -24,8 +24,9 @@ var buildDate string
 var env string
 var amplitudeAPIKey string
 var goarm string
-var buildType string // set from the build script, cli or gui
 
+// var buildType string // set from the build script, cli or gui
+const buildType = "gui"
 const envRelease = "release"
 const envDev = "dev"
 const rootShort = "Kelp is a free and open-source trading bot for the Stellar universal marketplace."

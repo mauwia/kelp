@@ -1,7 +1,5 @@
 module github.com/stellar/kelp
-
 go 1.13
-
 require (
 	github.com/Beldur/kraken-go-api-client v0.0.0-20180126083054-8d8ccfe4cc60
 	github.com/BurntSushi/toml v0.3.1
@@ -22,6 +20,7 @@ require (
 	github.com/form3tech-oss/jwt-go v3.2.3+incompatible
 	github.com/fsnotify/fsnotify v1.4.10-0.20200417215612-7f4cf4dd2b52 // indirect
 	github.com/go-chi/chi v4.0.3+incompatible
+	github.com/go-chi/chi/v5 v5.0.10 // indirect
 	github.com/go-errors/errors v1.0.2 // indirect
 	github.com/google/go-querystring v1.0.1-0.20190318165438-c8c88dbee036 // indirect
 	github.com/google/uuid v1.2.0
@@ -30,7 +29,7 @@ require (
 	github.com/hashicorp/hcl v1.0.1-0.20200422214639-569ae818ccb3 // indirect
 	github.com/julienschmidt/httprouter v1.3.1-0.20200114094804-8c9f31f047a3 // indirect
 	github.com/k0kubun/colorstring v0.0.0-20150214042306-9440f1994b88 // indirect
-	github.com/kr/session v0.1.1-0.20191204081249-b3d751351733 // indirect
+	github.com/kr/session v0.1.0// indirect
 	github.com/lechengfan/googleauth v0.1.1-0.20181105235754-7595ba02fbce
 	github.com/lib/pq v1.2.0
 	github.com/magiconair/properties v1.8.2-0.20191019074931-a586bb8b7dea // indirect

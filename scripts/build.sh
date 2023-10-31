@@ -68,7 +68,7 @@ function gen_bundler_json() {
 # takes in no args
 function gen_bind_files() {
     echo -n "generating the bind file in /cmd to create missing files for platforms specified in the bundler.json ... "
-    astilectron-bundler bd -c $KELP/bundler.json
+    /Users/macbook/go/bin/astilectron-bundler bd -c $KELP/bundler.json
     check_build_result $?
     echo "done"
 }
@@ -284,7 +284,7 @@ then
     echo ""
 
     # manually set buildType for CLI
-    DYNAMIC_LDFLAGS="$LDFLAGS -X github.com/stellar/kelp/cmd.buildType=cli"
+    DYNAMIC_LDFLAGS="$LDFLAGS -X github.com/stellar/kelp/cmd.buildType=gui"
 
     # cannot set goarm because not accessible (need to figure out a way)
     echo -n "compiling ... "
@@ -326,7 +326,7 @@ do
     fi
 
     # manually set buildType for CLI
-    DYNAMIC_LDFLAGS="$LDFLAGS -X github.com/stellar/kelp/cmd.buildType=cli"
+    DYNAMIC_LDFLAGS="$LDFLAGS -X github.com/stellar/kelp/cmd.buildType=gui"
 
     if [[ "$GOARM" != "" ]]
     then
